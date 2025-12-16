@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/climbie
+    username: username
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update   # jen pro vývoj, v produkci radši none + migrace
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  application:
+    name: climbie
+server:
+  port: 8080
